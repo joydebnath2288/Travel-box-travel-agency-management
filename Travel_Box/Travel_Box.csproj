@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB8B4FD2-EF6C-4755-A2CF-CB9683B0E59F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Travel_Box</RootNamespace>
+    <AssemblyName>Travel_Box</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About_Us.Designer.cs">
+      <DependentUpon>About_Us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Packages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Packages.Designer.cs">
+      <DependentUpon>Add_Packages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Booked_Packages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Booked_Packages.Designer.cs">
+      <DependentUpon>Admin_Booked_Packages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Dashboard.Designer.cs">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agency_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agency_Dashboard.Designer.cs">
+      <DependentUpon>Agency_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booked_Packages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booked_Packages.Designer.cs">
+      <DependentUpon>Booked_Packages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Password.Designer.cs">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultation_Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultation_Request.Designer.cs">
+      <DependentUpon>Consultation_Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_Us.Designer.cs">
+      <DependentUpon>Contact_Us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Account_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Account_Information.Designer.cs">
+      <DependentUpon>Customer_Account_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Bank_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Bank_Payment.Designer.cs">
+      <DependentUpon>Customer_Bank_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Book.Designer.cs">
+      <DependentUpon>Customer_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Card_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Card_Payment.Designer.cs">
+      <DependentUpon>Customer_Card_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Mobile_Banking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Mobile_Banking.Designer.cs">
+      <DependentUpon>Customer_Mobile_Banking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Package_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Package_Details.Designer.cs">
+      <DependentUpon>Customer_Package_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Package.Designer.cs">
+      <DependentUpon>Delete_Package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot_Password_Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot_Password_Email.Designer.cs">
+      <DependentUpon>Forgot_Password_Email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot_Password_OTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot_Password_OTP.Designer.cs">
+      <DependentUpon>Forgot_Password_OTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Select_Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Select_Location.Designer.cs">
+      <DependentUpon>Customer_Select_Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Admin.Designer.cs">
+      <DependentUpon>Manage_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Agency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Agency.Designer.cs">
+      <DependentUpon>Manage_Agency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Customer.Designer.cs">
+      <DependentUpon>Manage_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Packages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Packages.Designer.cs">
+      <DependentUpon>Customer_Packages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Package_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Package_Details.Designer.cs">
+      <DependentUpon>Package_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpEmail.Designer.cs">
+      <DependentUpon>SignUpEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpOTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpOTP.Designer.cs">
+      <DependentUpon>SignUpOTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp_Terms&amp;Conditions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp_Terms&amp;Conditions.Designer.cs">
+      <DependentUpon>SignUp_Terms&amp;Conditions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About_Us.resx">
+      <DependentUpon>About_Us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Packages.resx">
+      <DependentUpon>Add_Packages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Booked_Packages.resx">
+      <DependentUpon>Admin_Booked_Packages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Dashboard.resx">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agency_Dashboard.resx">
+      <DependentUpon>Agency_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booked_Packages.resx">
+      <DependentUpon>Booked_Packages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Password.resx">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultation_Request.resx">
+      <DependentUpon>Consultation_Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_Us.resx">
+      <DependentUpon>Contact_Us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Account_Information.resx">
+      <DependentUpon>Customer_Account_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Bank_Payment.resx">
+      <DependentUpon>Customer_Bank_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Book.resx">
+      <DependentUpon>Customer_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Card_Payment.resx">
+      <DependentUpon>Customer_Card_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Mobile_Banking.resx">
+      <DependentUpon>Customer_Mobile_Banking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Package_Details.resx">
+      <DependentUpon>Customer_Package_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Package.resx">
+      <DependentUpon>Delete_Package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgot_Password_Email.resx">
+      <DependentUpon>Forgot_Password_Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgot_Password_OTP.resx">
+      <DependentUpon>Forgot_Password_OTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Select_Location.resx">
+      <DependentUpon>Customer_Select_Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Admin.resx">
+      <DependentUpon>Manage_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Agency.resx">
+      <DependentUpon>Manage_Agency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Customer.resx">
+      <DependentUpon>Manage_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Packages.resx">
+      <DependentUpon>Customer_Packages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Package_Details.resx">
+      <DependentUpon>Package_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpEmail.resx">
+      <DependentUpon>SignUpEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpOTP.resx">
+      <DependentUpon>SignUpOTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp_Terms&amp;Conditions.resx">
+      <DependentUpon>SignUp_Terms&amp;Conditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
